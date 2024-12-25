@@ -4,13 +4,17 @@ import com.oop.belajar.person.*
 import com.oop.belajar.animal.*
 
 fun main() {
+//    belajarPerson()
     belajarAnimal()
 }
 
 fun belajarAnimal(){
-    val kucing = Ability("Kucing" , 20 , 56)
-    val anjing = Ability("Anjing" , 30 , 45)
+    val kucing = Ability("Kucing" , 35 , 31)
+    val anjing = Ability("Anjing" , 26 , 45)
 
+    anjing.attacked(kucing.attack())
+    anjing.attacked(kucing.attack(2))
+    anjing.attacked(kucing.attack())
     anjing.attacked(kucing.attack())
 }
 
