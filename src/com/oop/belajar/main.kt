@@ -1,16 +1,29 @@
 package com.oop.belajar
 
 import com.oop.belajar.person.*
+import com.oop.belajar.animal.*
 
 fun main() {
-//    val mamat = Person("Rizky", "Rahmat Nugraha")
-//    val yoss = Person("Yoss", "Ananto")
+    belajarAnimal()
+}
 
-//    println(mamat.sayHello("Yoss"))
-//    println(yoss.sayHello("Mamat"))
+fun belajarAnimal(){
+    val kucing = Ability("Kucing" , 20 , 56)
+    val anjing = Ability("Anjing" , 30 , 45)
 
-    val mamatAdress = Address("Rizky Rahmat")
+    anjing.attacked(kucing.attack())
+}
 
-    println(mamatAdress.sayHello("Yoss"))
-    println(mamatAdress.alamat("Cianjur"))
+
+fun belajarPerson(){
+    val mamat = Person("Rizky", "Rahmat Nugraha")
+    val yoss = Person("Yoss", "Ananto")
+
+    println(mamat.sayHello("Yoss"))
+    println(yoss.sayHello("Mamat"))
+
+    val mamatAddress = Address("Rizky Rahmat")
+
+    println(mamatAddress.sayHello("Yoss"))
+    println(mamatAddress.alamat("Cianjur"))
 }
